@@ -110,3 +110,19 @@ body {
 .loader.show {
     display: inline-block;
 }
+.loader {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #3498db;
+  animation: bounce 0.6s infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
